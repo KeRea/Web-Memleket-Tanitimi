@@ -1,3 +1,60 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+#menu {
+  height: 80px;
+  padding: 0 20px;
+}
+#logo {
+  font-size: 30px;
+  line-height: 80px;
+  color: #005200;
+  float: left;
+}
+nav {
+  float: right;
+  line-height: 80px;
+}
+nav a:link {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #003666;
+}
+nav a:hover {
+  border-bottom: 2px solid #003666;
+}
+nav a:visited {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #003666;
+}
+.ikon {
+  margin-right: 7px;
+  font-size: 16px;
+}
+#anasayfa {
+  background-color: gray;
+  height: 600px;
+  background-image: url("img/Ishak_Pasha_Palace1454.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#black {
+  height: 600px;
+  background-color: black;
+  opacity: 0.3;
+}
+#içerik {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+}
