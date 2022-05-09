@@ -152,3 +152,120 @@ span {
 .card:hover {
   border: 2px solid grey;
 }
+#Ben {
+  background-color: #003666;
+  padding: 50px;
+  height: 800px;
+  text-align: center;
+}
+#benh3 {
+  color: white;
+}
+.sutun-sol-sag {
+  width: 385px;
+  float: left;
+  padding: 50px;
+}
+.oval {
+  border-radius: 50%;
+}
+.benad {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+.kisiler {
+  color: #888;
+  font-size: 18x;
+}
+.social {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  width: 50px;
+  border-radius: 5px 10px;
+}
+.social:hover {
+  background-color: #888;
+}
+.sutun {
+  width: 385px;
+  float: left;
+  padding: 10px;
+}
+#iletisim {
+  background: url("img/Ishak_Pasha_Palace1454.jpg");
+  background-size: cover;
+  padding: 50px;
+  height: auto;
+  text-align: center;
+}
+#h3iletisim {
+  color: white;
+}
+#iletisimopak {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  height: 550px;
+}
+#formgruop {
+  width: 700px;
+  float: left;
+  height: 500px;
+  text-align: left;
+}
+#sagform {
+  width: 50%;
+  float: right;
+  padding-left: 5px;
+}
+#solform {
+  width: 50%;
+  float: left;
+  padding-right: 5px;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced;
+}
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #445c6e;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#adres {
+  font-size: 25px;
+}
+#copyright {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+#up {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 8px 9px;
+  margin-top: 20px;
+}
