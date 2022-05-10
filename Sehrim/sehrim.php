@@ -165,3 +165,10 @@
 <script src="owl/script.js"></script>
   </body>
 </html>
+
+<?php 
+
+include("baglanti.php");
+
+
+?>
