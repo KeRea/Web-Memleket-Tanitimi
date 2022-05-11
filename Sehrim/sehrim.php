@@ -123,13 +123,15 @@
 <section id="iletisim">
   <div class="container">
     <h3 id="h3iletisim">iletişim</h3>
+
+    <form action="sehrim.php" method="post">
     <div id="iletisimopak">
       <div id="formgruop">
         <div id="solform">
           <input type="text" name="isim"
           placeholder="Ad Soyad"
           required class="form-control">
-          <input type="text" name="telefon"
+          <input type="text" name="tel"
           placeholder="Telefon Numarası" required class="form-control">
         </div>
         <div id="sagform">
@@ -140,7 +142,7 @@
           placeholder="Konu Başlığı" required class="form-control">
         </div>
         <textarea name="mesaj" id="" cols="30" rows="10" placeholder="Mesaj Giriniz" required class="form-control"></textarea>
-        <input type="Submit" value="Yolla">
+        <input type="submit" value="yolla">
 
       </div>
 
@@ -149,6 +151,7 @@
         <p>E-mail: burak.akbulutx@hotmail.com</p>
       </div>
     </div>
+</form>
     <footer>
       <div id="copyright">2022 Tüm Hakları Saklıdır </div>
       <a href="#menu"><i class="fa-solid fa-chevron-up" id="up"></i></a>
@@ -170,5 +173,21 @@
 
 include("baglanti.php");
 
+if(isset($_POST["isim"], $_POST["tel"], $_POST["mail"], $_POST["konu"], $_POST["mesaj"]))
+{
+  $adsoyad=$_POST["isim"];
+  $telefon=$_POST["tel"];
+  $email=$_POST["mail"];
+  $konu=$_POST["konu"];
+  $mesaj=$_POST["mesaj"];
+
+  $ekle="INSERT INTO iletisim( adsoyad, telefon, email, konu, mesaj) VALUES ('".$adsoyad."','".$telefon."','".$email."','".$konu."','".$mesaj."')";
+}
+
+if($baglan->query($ekle)===TRUE)
+{
+  echo"<script>alert('Mesajınız Yollama Başarılı')</script
+  >";
+}
 
 ?>

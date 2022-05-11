@@ -42,13 +42,40 @@
         <th>Konu</th>
         <th>Mesaj</th>
       </tr>
-      <tr>
-        <td>burak</td>
-        <td>54564546546</td>
-        <td>burak</td>
-        <td>bilinmiyor</td>
-        <td>sadfsdsdsdagsdg</td>
-      </tr>
+
+      <?php
+       include("baglanti.php");
+       $sec="Select * From iletisim";
+       $sonuc=$baglan->query($sec);
+
+      
+       if($sonuc->num_rows>0)
+      {
+      while($cek=$sonuc->fetch_assoc())
+      {
+          echo "
+          <tr>
+            <td>".$cek['adsoyad']."</td>
+             <td>".$cek['telefon']."</td>
+             <td>".$cek['email']."</td>
+             <td>".$cek['konu']."</td>
+             <td>".$cek['mesaj']."</td>
+          </tr>
+          
+          ";
+
+       }
+
+
+      } 
+       else{
+             echo" veri tabanında hiçbir veri bulunamamıştır";
+
+      } 
+
+      ?>
+      
     </table>
   </body>
 </html>
+
