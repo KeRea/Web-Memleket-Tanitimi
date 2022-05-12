@@ -58,7 +58,7 @@
   </head>
   <body>
     <form
-      action="panelgiris.html"
+      action="panelgiris.php"
       method="post"
       style="max-width: 500px; margin: auto"
     >
@@ -67,8 +67,8 @@
         <i class="fa fa-user icon"></i>
         <input
           class="input-field"
-          type="text"
-          placeholder="Kullanıcı Adı"
+          type="email"
+          placeholder="Mail Giriniz"
           name="usrnm"
         />
       </div>
@@ -87,3 +87,22 @@
     </form>
   </body>
 </html>
+<?php 
+
+ session_start();
+
+ if(isset($_POST["usrnm"],$_POST["psw"]))
+ {
+    if($_POST["usrnm"]=="b211210102@sakarya.edu.tr"&&$_POST["psw"]=="b211210102")
+    {
+        $_SESSION['user']=$_POST["usrnm"];
+        header("location:panel.php");
+
+    }
+    else{
+      echo"<script>alert('kullanıcı adı veya şifre yanlış')</script>";
+    }
+
+ }
+
+?>

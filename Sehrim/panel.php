@@ -44,35 +44,49 @@
       </tr>
 
       <?php
-       include("baglanti.php");
-       $sec="Select * From iletisim";
-       $sonuc=$baglan->query($sec);
+       session_start();
+       if($_SESSION["user"]=="")
+       {
+         echo "<script>window.location.href='cikis.php'</script>";
+       }
+       else{
 
-      
-       if($sonuc->num_rows>0)
-      {
-      while($cek=$sonuc->fetch_assoc())
-      {
-          echo "
-          <tr>
-            <td>".$cek['adsoyad']."</td>
-             <td>".$cek['telefon']."</td>
-             <td>".$cek['email']."</td>
-             <td>".$cek['konu']."</td>
-             <td>".$cek['mesaj']."</td>
-          </tr>
-          
-          ";
+        echo "Giriş kimliğiniz : ".$_SESSION['user']."<br>";
+        echo " <a href='cikis.php'>ÇIKIŞ YAP</a><br><br><br>";
+        include("baglanti.php");
+        $sec="Select * From iletisim";
+        $sonuc=$baglan->query($sec);
+ 
+       
+        if($sonuc->num_rows>0)
+       {
+       while($cek=$sonuc->fetch_assoc())
+       {
+           echo "
+           <tr>
+             <td>".$cek['adsoyad']."</td>
+              <td>".$cek['telefon']."</td>
+              <td>".$cek['email']."</td>
+              <td>".$cek['konu']."</td>
+              <td>".$cek['mesaj']."</td>
+           </tr>
+           
+           ";
+ 
+        }
+ 
+ 
+        } 
+        else{
+              echo" veri tabanında hiçbir veri bulunamamıştır";
+ 
+        } 
+ 
+
 
        }
 
-
-      } 
-       else{
-             echo" veri tabanında hiçbir veri bulunamamıştır";
-
-      } 
-
+       
       ?>
       
     </table>
