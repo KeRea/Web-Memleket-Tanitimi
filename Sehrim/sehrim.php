@@ -25,13 +25,14 @@
     <section id="menu">
       <div id="logo">Sehrim ve Ben</div>
       <nav>
-        <a href=""><i class="fa-solid fa-house ikon"></i>AnaSayfa</a>
-        <a href="hakkimda"><i class="fa-solid fa-circle-info ikon"></i>Hakkımda</a>
-        <a href=""><i class="fa-solid fa-person ikon"></i>özgeçmiş</a>
-        <a href=""
+        <a href="#anasayfa"><i class="fa-solid fa-house ikon"></i>AnaSayfa</a>
+        <a href="#hakkimda"><i class="fa-solid fa-circle-info ikon"></i>Hakkımda</a>
+        <a href="#Ben"><i class="fa-solid fa-person ikon"></i>özgeçmiş</a>
+        <a href="#yerler"
           ><i class="fa-solid fa-mountain-city ikon"></i>Sehrim ve mirasımız</a
         >
-        <a href=""><i class="fa-solid fa-map-pin ikon"></i>iletişim</a>
+        <a href="#iletisim"><i class="fa-solid fa-map-pin ikon"></i>iletişim</a>
+        <a href="panelgiris.php"><i class="fa-solid fa-map-pin ikon"></i>Login</a>
       </nav>
     </section>
 
@@ -43,22 +44,22 @@
         <div id="içerik">
             <h2>Şehrim Ve Ben </h2>
             <hr width=400 align=left>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iure nam distinctio qui cum voluptates magni quisquam blanditiis alias eius dicta, quo itaque harum voluptatibus cupiditate vitae pariatur labore minima!</p>
+            <p>Merhaba ben Burak Akbulut Bilgisayar mühendisliği 1. sınıf öğrencisiyim ve Ağrı Doğubeyazıtlıyım bu yaptığım ilk websitede memleketimi ve kendimi anlatacağım.</p>
         </div>
       </div>
     </section>
 <section id="hakkimda">
     <h3>Hakkımda</h3>
     <div class="container">
-        <div id="sol"><h5 id="h5sol">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+        <div id="sol"><h5 id="h5sol">Yalnızlık ışığı görene kadardır.</h5>
 
         </div>
         <div id="sag"> 
             <span>B</span>
-            <p id="psag"> Lorem ipsum dolor sits amet consectetur adipisicing elit. Vitae error deserunt rem fugiat magni accusamus quod </p>
+            <p id="psag"> urak Akbulut 06.08.2003 te Ağrı Doğubeyzıtta doğdum.İlkokul , ortaokul ve liseyi doğubeyıztta okudum ve 2021 yılında yks yerleştiemem ile Sakarya Üniversitesi 1.öğretim Bilgisayar Mühendisliğini kazandım. </p>
         </div>
       <img src="img/photo-1553095066-5014bc7b7f2d.jfif" alt="" id="imgid" class=" mt100">
-      <p id="pson">orem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores magni non illum voluptates totam aperiam modi excepturi aliquid alias nemo atque voluptate nesciunt blanditiis quisquam eum sed, ipsum repellat?</p>
+      <p id="pson">ilgi alanlarım içinde Blockchain ,futbol , bilgisayar oyunları ,kod geliştirme... detaylı bilgiyi kendimi ve cv mi koyudğum bolumde bulabirlsiniz</p>
 
     </div>
 
@@ -70,51 +71,70 @@
     <div class="owl-carousel owl-theme" >
     <div class="card item" data-merge="1.5" >
         <img src="img/Ishak_Pasha_Palace1454.jpg" alt="" class="img-fluid">
-        <h5 class="baslikcard">yerler</h5>
-        <p class="cardp">Lorem ipsum dolor sit amet.</p>
+        <h5 class="baslikcard">İshak Paşa Sarayı</h5>
+        <p class="cardp">İshak Paşa Sarayı  116 odalı sarayda türbe, cami, surlar, iç ve dış avlular, divan ve harem salonları, koğuşlar bulunur.</p>
+    </div> 
+    <div class="card item" data-merge="1.5" >
+        <img src="img/indir_1.jpg" alt="" class="img-fluid">
+        <h5 class="baslikcard">Ahmed-iHani Türbesi</h5>
+        <p class="cardp">1651 yılında doğan ve ölüm tarihi kesin olarak bilinmeyen Ahmedi Hani ye ait bir türbedir. </p>
     </div>
-    
-        
+    <div class="card item" data-merge="1.5" >
+      <img src="img/indir-_2_.jpg" class="img-fluid">
+      <h5 class="baslikcard">Doğubeyazıt Futbol Takımı</h5>
+      <p class="cardp">Doğubeyazıt futbol takımıdır 2022 senesinde bal liglerinden TFF ye adım atmak üzereyken finalde elenmiştir. </p>
+  </div>
+  <div class="card item" data-merge="1.5" >
+      <img src="img/indir-_3_.jpg" class="img-fluid">
+      <h5 class="baslikcard">Ağrı dağı</h5>
+      <p class="cardp">Ağrı dağı Türkiye'nin en büyük dağı olmakla birlikte Ağrı'nın bir simgesidir </p>
+  </div>
+           
     </div>
     
 </div>
-
-</div>
-
 
 </section>
 <section id="Ben">
     <div class="container">
         <h3 id="benh3">Ben</h3>
         <div class="sutun-sol-sag">
-            <img src="img/user-1633248_960_720.webp" alt="" class="img-fluid oval">
-            <h4 class="benad">Burak Akbulut</h4>
-            <p class="kisiler">Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="kisiikon">
-              <a href="#"><i class="fa-brands fa-twitter social"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram social"></i></a>
-              <a href="#"><i class="fa-solid fa-envelope social"></i></a>
-          </div>
+            <img src="img/indir (4).jfif" alt="" class="img-fluid ">
+            <h4 class="benad">Bitcoin</h4>
+            <p class="kisiler">İlgi ve zevk alanlarımdan crypto.</p>
+                 <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+       <div class="tradingview-widget-container__widget"></div>
+         <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+         "symbol": "BINANCE:BTCUSDT",
+         "width": "100%",
+         "colorTheme": "light",
+         "isTransparent": true,
+         "locale": "tr"
+        }
+         </script>
+     </div>
+       
+           
         </div>
         <div class="sutun">
-          <img src="img/user-1633248_960_720.webp" alt="" class="img-fluid oval">
+          <img src="img/Adsız.jpg" alt="" class="img-fluid oval">
           <h4 class="benad">Burak Akbulut</h4>
-          <p class="kisiler">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="kisiler">Bilgisayar mühendisliği 1. sınıf*Lise okul 1.liği*2019'dan beri Borsa Teknik Analiz*Nft </p>
           <div class="kisiikon">
-            <a href="#"><i class="fa-brands fa-twitter social"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram social"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope social"></i></a>
+            <a href="https://twitter.com/binance"><i class="fa-brands fa-twitter social"></i></a>
+            <a href="https://www.instagram.com/rue.burakbulut/"><i class="fa-brands fa-instagram social"></i></a>
+            <a href="https://www.google.com/intl/tr/gmail/about/"><i class="fa-solid fa-envelope social"></i></a>
         </div>
       </div>
       <div class="sutun-sol-sag">
-        <img src="img/user-1633248_960_720.webp" alt="" class="img-fluid oval">
-        <h4 class="benad">Burak Akbulut</h4>
-        <p class="kisiler">Lorem ipsum dolor sit amet consectetur.</p>
-        <div class="kisiikon">
-          <a href="#"><i class="fa-brands fa-twitter social"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram social"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope social"></i></a>
-      </div>
+        
+        <h4 class="benad">FUTBOL</h4>
+        <p class="kisiler">Desteklediğim takım galatasaray.</p>
+        <div id="scoreaxis-widget-699cf" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%"><iframe id="Iframe" src="https://www.scoreaxis.com/widget/team-info/34?autoHeight=1&amp;font=1&amp;fontSize=10&amp;playersTab=0&amp;matchesTab=1&amp;teamLogo=1&amp;statsTab=0&amp;inst=699cf" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"699cf"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-699cf iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div>
+      
     </div>
     </div>
 

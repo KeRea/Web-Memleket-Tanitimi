@@ -96,6 +96,7 @@
     if($_POST["usrnm"]=="b211210102@sakarya.edu.tr"&&$_POST["psw"]=="b211210102")
     {
         $_SESSION['user']=$_POST["usrnm"];
+        echo"<script>alert('Hoşgeldin B211210102')</script>";
         header("location:panel.php");
 
     }
